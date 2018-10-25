@@ -1,0 +1,39 @@
+W, [2018-10-24T18:40:30.370535 #786]  WARN -- default-leap: Deprecated configuration detected:
+require_chef_omnibus
+chef_omnibus_url
+Run 'kitchen doctor' for details.
+
+I, [2018-10-24T18:40:32.015753 #786]  INFO -- default-leap: -----> Destroying <default-leap>...
+E, [2018-10-24T18:40:32.215278 #786] ERROR -- default-leap: Destroy failed on instance <default-leap>.
+E, [2018-10-24T18:40:32.217187 #786] ERROR -- default-leap: ------Exception-------
+E, [2018-10-24T18:40:32.217273 #786] ERROR -- default-leap: Class: Aws::EC2::Errors::AuthFailure
+E, [2018-10-24T18:40:32.217314 #786] ERROR -- default-leap: Message: AWS was not able to validate the provided access credentials
+E, [2018-10-24T18:40:32.217349 #786] ERROR -- default-leap: ----------------------
+E, [2018-10-24T18:40:32.217381 #786] ERROR -- default-leap: ------Backtrace-------
+E, [2018-10-24T18:40:32.217413 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-core-2.11.9/lib/seahorse/client/plugins/raise_response_errors.rb:15:in `call'
+E, [2018-10-24T18:40:32.217493 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-core-2.11.9/lib/aws-sdk-core/plugins/jsonvalue_converter.rb:20:in `call'
+E, [2018-10-24T18:40:32.217549 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-core-2.11.9/lib/aws-sdk-core/plugins/idempotency_token.rb:18:in `call'
+E, [2018-10-24T18:40:32.217596 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-core-2.11.9/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2018-10-24T18:40:32.217640 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-core-2.11.9/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2018-10-24T18:40:32.217686 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-core-2.11.9/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2018-10-24T18:40:32.217735 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-core-2.11.9/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2018-10-24T18:40:32.217776 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.11.9/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2018-10-24T18:40:32.217822 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.11.9/lib/aws-sdk-resources/operations.rb:41:in `call'
+E, [2018-10-24T18:40:32.217864 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.11.9/lib/aws-sdk-resources/operation_methods.rb:19:in `block in add_operation'
+E, [2018-10-24T18:40:32.217907 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-ec2-2.2.1/lib/kitchen/driver/ec2.rb:292:in `destroy'
+E, [2018-10-24T18:40:32.217949 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:469:in `public_send'
+E, [2018-10-24T18:40:32.218040 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2018-10-24T18:40:32.218071 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-10-24T18:40:32.218100 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-10-24T18:40:32.218129 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-10-24T18:40:32.218158 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:497:in `action'
+E, [2018-10-24T18:40:32.218187 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2018-10-24T18:40:32.218215 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:456:in `destroy_action'
+E, [2018-10-24T18:40:32.218289 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-10-24T18:40:32.218318 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `each'
+E, [2018-10-24T18:40:32.218344 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-10-24T18:40:32.218370 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:168:in `destroy'
+E, [2018-10-24T18:40:32.218396 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-10-24T18:40:32.218422 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-10-24T18:40:32.218447 #786] ERROR -- default-leap: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-10-24T18:40:32.218473 #786] ERROR -- default-leap: ----End Backtrace-----

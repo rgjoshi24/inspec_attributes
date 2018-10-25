@@ -1,0 +1,9 @@
+---
+username: ubuntu
+auto_security_group_id: sg-03f6ddacbc85b8d00
+auto_key_id: kitchen-defaultleap-subhrokar-SubhrosMBPlocaldomain-2018-10-24T20:38:30Z-vu1jwsa0
+ssh_key: "/Users/subhrokar/workspace/ram/hello/.kitchen/default-leap.pem"
+server_id: i-0df8a55167052d210
+hostname: ec2-18-208-175-63.compute-1.amazonaws.com
+last_action: create
+last_error: Aws::EC2::Errors::AuthFailure
